@@ -1,0 +1,140 @@
+.courses-page {
+  min-height: 100vh;
+  background: #F8FAFC;
+}
+
+.courses-hero {
+  background: linear-gradient(135deg, #EFF6FF 0%, #DBEAFE 100%);
+  padding: 80px 80px 60px;
+  text-align: center;
+}
+
+.courses-hero h1 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 56px;
+  font-weight: 800;
+  margin-bottom: 20px;
+  letter-spacing: -1.5px;
+}
+
+.courses-hero p {
+  font-size: 18px;
+  color: #64748B;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.courses-filter-section {
+  padding: 40px 80px;
+  background: #FFFFFF;
+  border-bottom: 1px solid #E2E8F0;
+}
+
+.filter-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.filter-btn {
+  background: #F1F5F9;
+  color: #64748B;
+  border: 2px solid transparent;
+  padding: 12px 24px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.filter-btn.active {
+  background: #2563EB;
+  color: white;
+  border-color: #2563EB;
+}
+
+.filter-btn:hover {
+  background: #E0E7FF;
+  color: #2563EB;
+}
+
+.filter-btn.active:hover {
+  background: #1D4ED8;
+  color: white;
+}
+
+.search-box input {
+  padding: 12px 20px;
+  border: 2px solid #E2E8F0;
+  border-radius: 10px;
+  font-size: 14px;
+  width: 300px;
+  transition: all 0.3s;
+}
+
+.search-box input:focus {
+  outline: none;
+  border-color: #2563EB;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.all-courses-section {
+  padding: 60px 80px 100px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.course-description {
+  color: #64748B;
+  font-size: 14px;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+.course-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 8px;
+  padding-top: 20px;
+  border-top: 1px solid #E2E8F0;
+}
+
+.course-price {
+  font-family: 'Manrope', sans-serif;
+  font-size: 24px;
+  font-weight: 800;
+  color: #2563EB;
+}
+
+.course-footer .btn-primary {
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.no-results h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1E293B;
+  margin-bottom: 12px;
+}
+
+.no-results p {
+  color: #64748B;
+  font-size: 16px;
+}
