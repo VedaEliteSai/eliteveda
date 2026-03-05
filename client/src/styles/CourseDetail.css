@@ -869,3 +869,553 @@
   opacity: 0.6;
   cursor: not-allowed;
 }
+
+/* ==================== MOBILE RESPONSIVE STYLES ==================== */
+
+/* Tablet (768px and below) */
+@media (max-width: 768px) {
+  /* Navbar */
+  .navbar {
+    padding: 15px 20px;
+  }
+
+  .nav-links {
+    display: none; /* Hide menu - add hamburger later */
+  }
+
+  .logo {
+    font-size: 22px;
+  }
+
+  /* Hero Section */
+  .course-hero {
+    flex-direction: column;
+    padding: 80px 20px 40px;
+    min-height: auto;
+  }
+
+  .hero-left {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .hero-right {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .course-icon-large {
+    font-size: 50px;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 20px;
+  }
+
+  .hero-left h1 {
+    font-size: 32px;
+  }
+
+  .hero-left p {
+    font-size: 15px;
+  }
+
+  .btn-primary.large {
+    padding: 14px 35px;
+    font-size: 15px;
+  }
+
+  .enrollment-info {
+    flex-direction: column;
+    gap: 10px;
+    font-size: 13px;
+  }
+
+  .enrollment-form {
+    padding: 25px 20px;
+  }
+
+  .enrollment-form h3 {
+    font-size: 20px;
+  }
+
+  .enrollment-form input {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  /* Course Stats */
+  .course-stats {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: 15px;
+    padding: 30px 20px;
+  }
+
+  .stat-card {
+    padding: 20px 15px;
+  }
+
+  .stat-card h3 {
+    font-size: 20px;
+  }
+
+  .stat-card p {
+    font-size: 13px;
+  }
+
+  .cert-logos-container {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .cert-logo img {
+    height: 30px;
+  }
+
+  /* Curriculum Section */
+  .curriculum-section {
+    padding: 40px 20px;
+  }
+
+  .curriculum-section h2 {
+    font-size: 28px;
+  }
+
+  .curriculum-container {
+    grid-template-columns: 1fr !important;
+    gap: 30px;
+  }
+
+  .curriculum-accordion {
+    width: 100%;
+  }
+
+  .curriculum-image {
+    width: 100%;
+    position: relative;
+    top: 0;
+  }
+
+  .curriculum-image img {
+    max-height: 300px;
+    object-fit: cover;
+  }
+
+  .week-header h3 {
+    font-size: 16px;
+  }
+
+  .week-content h4 {
+    font-size: 15px;
+  }
+
+  .week-content ul li {
+    font-size: 13px;
+  }
+
+  /* Certificates Section */
+  .certificates-section {
+    padding: 40px 20px;
+  }
+
+  .certificates-section h2 {
+    font-size: 28px;
+  }
+
+  .certificates-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .certificate-card {
+    padding: 20px;
+  }
+
+  .cert-image {
+    font-size: 40px;
+    width: 70px;
+    height: 70px;
+  }
+
+  .certificate-card h4 {
+    font-size: 18px;
+  }
+
+  .sample-cert-images {
+    grid-template-columns: 1fr !important;
+    gap: 15px;
+  }
+
+  /* Alumni Section */
+  .alumni-section {
+    padding: 40px 20px;
+  }
+
+  .alumni-section h2 {
+    font-size: 28px;
+  }
+
+  .alumni-subtitle {
+    font-size: 15px;
+  }
+
+  .logo-track img {
+    height: 40px;
+    margin: 0 20px;
+  }
+
+  /* Pricing Section */
+  .pricing-section {
+    padding: 40px 20px;
+  }
+
+  .pricing-section h2 {
+    font-size: 28px;
+  }
+
+  .pricing-subtitle {
+    font-size: 15px;
+  }
+
+  .pricing-grid {
+    grid-template-columns: 1fr !important;
+    gap: 20px;
+  }
+
+  .pricing-card {
+    padding: 25px 20px;
+  }
+
+  .pricing-card h3 {
+    font-size: 22px;
+  }
+
+  .plan-subtitle {
+    font-size: 14px;
+  }
+
+  .price {
+    font-size: 32px;
+  }
+
+  .features-list li {
+    font-size: 13px;
+    padding: 10px 0;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 40px 20px 20px;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .footer-links {
+    text-align: center;
+  }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+  /* Navbar */
+  .navbar {
+    padding: 12px 15px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  /* Hero */
+  .course-hero {
+    padding: 70px 15px 30px;
+  }
+
+  .course-icon-large {
+    font-size: 45px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .hero-left h1 {
+    font-size: 28px;
+  }
+
+  .hero-left p {
+    font-size: 14px;
+    line-height: 1.6;
+  }
+
+  .btn-primary.large {
+    padding: 12px 28px;
+    font-size: 14px;
+  }
+
+  .enrollment-info span {
+    font-size: 12px;
+  }
+
+  .enrollment-form {
+    padding: 20px 15px;
+  }
+
+  .enrollment-form h3 {
+    font-size: 18px;
+  }
+
+  .enrollment-form input {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .enrollment-form button {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .submit-message {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  /* Stats - Single Column */
+  .course-stats {
+    grid-template-columns: 1fr !important;
+    gap: 12px;
+    padding: 25px 15px;
+  }
+
+  .stat-card {
+    padding: 18px 12px;
+  }
+
+  .stat-card h3 {
+    font-size: 18px;
+  }
+
+  .stat-card p {
+    font-size: 12px;
+  }
+
+  .cert-logo img {
+    height: 25px;
+  }
+
+  /* Curriculum */
+  .curriculum-section {
+    padding: 30px 15px;
+  }
+
+  .curriculum-section h2 {
+    font-size: 24px;
+  }
+
+  .curriculum-container {
+    gap: 20px;
+  }
+
+  .week-accordion-item {
+    margin-bottom: 12px;
+  }
+
+  .week-header {
+    padding: 15px;
+  }
+
+  .week-header h3 {
+    font-size: 15px;
+  }
+
+  .week-content {
+    padding: 15px;
+  }
+
+  .topic-section {
+    margin-bottom: 15px;
+  }
+
+  .week-content h4 {
+    font-size: 14px;
+  }
+
+  .week-content ul li {
+    font-size: 12px;
+    padding: 6px 0;
+  }
+
+  .curriculum-image img {
+    max-height: 250px;
+  }
+
+  /* Certificates */
+  .certificates-section {
+    padding: 30px 15px;
+  }
+
+  .certificates-section h2 {
+    font-size: 24px;
+  }
+
+  .certificates-grid {
+    gap: 15px;
+  }
+
+  .certificate-card {
+    padding: 18px;
+  }
+
+  .cert-image {
+    font-size: 35px;
+    width: 60px;
+    height: 60px;
+  }
+
+  .certificate-card h4 {
+    font-size: 16px;
+  }
+
+  .certificate-card p {
+    font-size: 13px;
+  }
+
+  .sample-certificates h3 {
+    font-size: 20px;
+  }
+
+  .cert-placeholder-sample {
+    padding: 30px;
+  }
+
+  .cert-placeholder-sample span {
+    font-size: 40px;
+  }
+
+  /* Alumni */
+  .alumni-section {
+    padding: 30px 15px;
+  }
+
+  .alumni-section h2 {
+    font-size: 24px;
+  }
+
+  .alumni-subtitle {
+    font-size: 14px;
+  }
+
+  .logo-slider {
+    margin: 10px 0;
+  }
+
+  .logo-track img {
+    height: 30px;
+    margin: 0 12px;
+  }
+
+  /* Pricing */
+  .pricing-section {
+    padding: 30px 15px;
+  }
+
+  .pricing-section h2 {
+    font-size: 24px;
+  }
+
+  .pricing-subtitle {
+    font-size: 14px;
+  }
+
+  .pricing-grid {
+    gap: 15px;
+  }
+
+  .pricing-card {
+    padding: 20px 15px;
+  }
+
+  .popular-badge {
+    padding: 5px 15px;
+    font-size: 11px;
+  }
+
+  .pricing-card h3 {
+    font-size: 20px;
+  }
+
+  .plan-subtitle {
+    font-size: 13px;
+  }
+
+  .price {
+    font-size: 28px;
+    margin: 15px 0;
+  }
+
+  .features-list {
+    margin: 15px 0;
+  }
+
+  .features-list li {
+    font-size: 12px;
+    padding: 8px 0;
+  }
+
+  .features-list .icon {
+    font-size: 14px;
+  }
+
+  .pricing-card .btn-primary {
+    padding: 11px 25px;
+    font-size: 13px;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 30px 15px 15px;
+  }
+
+  .footer-brand h3 {
+    font-size: 20px;
+  }
+
+  .footer-brand p {
+    font-size: 14px;
+  }
+
+  .footer-links h4 {
+    font-size: 16px;
+  }
+
+  .footer-links ul li {
+    font-size: 13px;
+    margin: 8px 0;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+    margin-top: 20px;
+  }
+}
+
+/* Very Small Mobile (360px and below) */
+@media (max-width: 360px) {
+  .hero-left h1 {
+    font-size: 24px;
+  }
+
+  .curriculum-section h2,
+  .certificates-section h2,
+  .alumni-section h2,
+  .pricing-section h2 {
+    font-size: 22px;
+  }
+
+  .btn-primary {
+    padding: 10px 22px;
+    font-size: 13px;
+  }
+}
