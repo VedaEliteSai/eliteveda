@@ -118,6 +118,49 @@ app.get('/api/enrollments', async (req, res) => {
   }
 });
 
+// Contact Form Route
+app.post('/api/contact', async (req, res) => {
+  try {
+    const { name, email, mobile, subject, message } = req.body;
+
+    // Validation
+    if (!name || !email || !mobile || !subject || !message) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'All fields are required' 
+      });
+    }
+
+    // Email validation
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+      return res.status(400).json({ 
+        success: false, 
+        message: 'Invalid email format' 
+      });
+    }
+
+    // Here you can:
+    // 1. Save to database (create Contact model)
+    // 2. Send email notification
+    // 3. Or just log for now
+
+    console.log('Contact Form Submission:', { name, email, mobile, subject, message });
+
+    res.status(201).json({ 
+      success: true, 
+      message: 'Thank you for contacting us! We will get back to you soon.'
+    });
+
+  } catch (error) {
+    console.error('Contact Error:', error);
+    res.status(500).json({ 
+      success: false, 
+      message: 'Server error. Please try again later.' 
+    });
+  }
+});
+
 // 404 Handler
 app.use((req, res) => {
   res.status(404).json({ 

@@ -18,11 +18,13 @@ const Home = () => {
     <div className="home">
       {/* Navbar */}
       <nav className="navbar">
-        <div className="logo">EliteVeda</div>
+        <div className="logo">
+          <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="EliteVeda Logo" className="logo-image" />
+        </div>
         <ul className="nav-links">
           <li><Link to="/courses">Courses</Link></li> 
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/about">About</Link></li>
+         <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
 
@@ -45,8 +47,8 @@ const Home = () => {
           </div>
           <div className="hero-stats">
             <div className="stat"><h3>15+</h3><p>Courses</p></div>
-            <div className="stat"><h3>5000+</h3><p>Students</p></div>
-            <div className="stat"><h3>100+</h3><p>Companies</p></div>
+            <div className="stat"><h3>1000+</h3><p>Students</p></div>
+            <div className="stat"><h3>60+</h3><p>Companies</p></div>
           </div>
         </div>
       </section>
@@ -150,9 +152,9 @@ const Home = () => {
           <div className="footer-links">
             <h4>Company</h4>
             <ul>
-              <li>About Us</li>
+      <li><Link to="/about">About Us</Link></li>
               <li>Careers</li>
-              <li>Contact</li>
+      <li><Link to="/contact">Contact</Link></li>
             </ul>
           </div>
         </div>
