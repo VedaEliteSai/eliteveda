@@ -164,7 +164,7 @@ const handleSubmit = async (e) => {
         {
           plan: 'Self Paced',
           subtitle: 'Learn at your own pace',
-          price: '₹5,999',
+          price: '₹4,999',
           features: [
             { name: 'Recorded Sessions', included: true },
             { name: 'Hands-on Projects', included: true },
@@ -179,7 +179,7 @@ const handleSubmit = async (e) => {
         {
           plan: 'Mentor Led',
           subtitle: 'Guided learning with mentor support',
-          price: '₹8,999',
+          price: '₹6,999',
           popular: true,
           features: [
             { name: 'Recorded Sessions', included: true },
@@ -195,7 +195,7 @@ const handleSubmit = async (e) => {
         {
           plan: 'Professional',
           subtitle: 'Be placement ready',
-          price: '₹13,999',
+          price: '₹9,999',
           features: [
             { name: 'Recorded Sessions', included: true },
             { name: 'Hands-on Projects', included: true },
@@ -288,9 +288,9 @@ const handleSubmit = async (e) => {
         }
       ],
       pricing: [
-        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹5,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹8,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹13,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
+        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹4,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹6,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹9,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
       ]
     },
 
@@ -384,9 +384,9 @@ const handleSubmit = async (e) => {
         }
       ],
       pricing: [
-        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹5,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹8,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹13,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
+        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹4,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹6,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹9,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
       ]
     },
 
@@ -464,9 +464,9 @@ const handleSubmit = async (e) => {
         }
       ],
       pricing: [
-        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹5,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹8,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹13,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
+        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹4,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹6,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹9,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
       ]
     },
 
@@ -540,9 +540,9 @@ const handleSubmit = async (e) => {
         }
       ],
       pricing: [
-        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹5,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹8,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹13,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
+        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹4,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹6,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹9,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
       ]
     },
 
@@ -620,9 +620,9 @@ const handleSubmit = async (e) => {
         }
       ],
       pricing: [
-        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹5,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹8,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹13,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
+        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹4,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹6,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹9,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
       ]
     },
 
@@ -712,9 +712,9 @@ const handleSubmit = async (e) => {
         }
       ],
       pricing: [
-        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹5,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹8,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
-        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹13,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
+        { plan: 'Self Paced', subtitle: 'Learn at your own pace', price: '₹4,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: false }, { name: 'Mentor Guidance', included: false }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Mentor Led', subtitle: 'Guided learning with mentor support', price: '₹6,999', popular: true, features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: false }, { name: '1:1 Mentoring', included: false }] },
+        { plan: 'Professional', subtitle: 'Be placement ready', price: '₹9,999', features: [{ name: 'Recorded Sessions', included: true }, { name: 'Hands-on Projects', included: true }, { name: 'Certifications', included: true }, { name: 'Doubt Clear Sessions', included: true }, { name: 'Live Sessions', included: true }, { name: 'Mentor Guidance', included: true }, { name: 'Placement Support', included: true }, { name: '1:1 Mentoring', included: true }] }
       ]
     },
     'SAP': {
@@ -2697,44 +2697,17 @@ const handleSubmit = async (e) => {
         </div>
       </section>
 
-      {/* Certificates */}
-      {/*<section className="certificates-section">
-        <h2>Certificates</h2>
-        <div className="certificates-grid">
-          <div className="certificate-card">
-            <div className="cert-image">🎓</div>
-            <h4>Course Completion Certificate</h4>
-            <p>Industry-recognized certificate upon successful completion</p>
-          </div>
-          <div className="certificate-card">
-            <div className="cert-image">🏆</div>
-            <h4>MSME Certified</h4>
-            <p>Government of India MSME certification</p>
-          </div>
-          <div className="certificate-card">
-            <div className="cert-image">✨</div>
-            <h4>Skill Certification</h4>
-            <p>Validates your technical expertise and skills</p>
-          </div>
+      {/* Certificates Section */}
+      <section className="certificates-section">
+        <h2>Get <span className="highlight">Certified</span></h2>
+        <div className="certificate-image-container">
+          <img 
+            src={`${process.env.PUBLIC_URL}/images/certifications/certificate-sample.jpg`} 
+            alt="Course Completion Certificate" 
+            className="certificate-image"
+          />
         </div>
-        <div className="sample-certificates">
-          <h3>Sample Certificates</h3>
-          <div className="sample-cert-images">
-            <div className="sample-cert">
-              <div className="cert-placeholder-sample">
-                <span>📜</span>
-                <p>Completion Certificate</p>
-              </div>
-            </div>
-            <div className="sample-cert">
-              <div className="cert-placeholder-sample">
-                <span>🏅</span>
-                <p>Excellence Certificate</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>*/}
+      </section>
 
       {/* Alumni Companies */}
       <section className="alumni-section">

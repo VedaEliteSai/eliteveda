@@ -94,7 +94,7 @@ const Contact = () => {
               <div className="info-card">
                 <div className="info-icon">📍</div>
                 <h3>Address</h3>
-                <p>123 Tech Park, Electronic City</p>
+                <p>JP Tech Park, Electronic City</p>
                 <p>Bangalore, Karnataka 560100</p>
               </div>
 

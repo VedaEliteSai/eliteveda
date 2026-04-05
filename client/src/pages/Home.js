@@ -81,6 +81,55 @@ const Home = () => {
         </div>
       </section>
 
+      {/* Testimonials Section */}
+      <section className="testimonials-section">
+        <h2>What Our <span className="highlight">Students Say</span></h2>
+        <p className="section-subtitle">Real stories from learners who transformed their careers</p>
+        <div className="testimonials-grid">
+          <div className="testimonial-card">
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+            <p className="testimonial-text">
+              "The AI course completely changed my career trajectory. Within 3 months of completion, I landed a role at a Fortune 500 company. The instructors are industry experts!"
+            </p>
+            <div className="testimonial-author">
+              <img src={`${process.env.PUBLIC_URL}/images/testimonials/student1.jpg`} alt="Priya Sharma" />
+              <div>
+                <h4>Priya Sharma</h4>
+                <p>AI Engineer at Accenture</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="testimonial-card">
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+            <p className="testimonial-text">
+              "Best investment in my career! The Web Development course was comprehensive, practical, and perfectly paced. Now I'm working as a full-stack developer."
+            </p>
+            <div className="testimonial-author">
+              <img src={`${process.env.PUBLIC_URL}/images/testimonials/student2.jpg`} alt="Rahul Kumar S" />
+              <div>
+                <h4>Rahul Kumar</h4>
+                <p>Full Stack Developer at Bosch</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="testimonial-card">
+            <div className="stars">⭐⭐⭐⭐⭐</div>
+            <p className="testimonial-text">
+              "The Data Science program exceeded my expectations. Real-world projects, excellent mentorship, and career support helped me transition from finance to tech."
+            </p>
+            <div className="testimonial-author">
+              <img src={`${process.env.PUBLIC_URL}/images/testimonials/student3.jpg`} alt="Anjali Patel" />
+              <div>
+                <h4>Anjali Patel</h4>
+                <p>Data Scientist at Microsoft</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Alumni Companies */}
 <section className="alumni-section">
   <h2>Our Alumni Works At</h2>
@@ -138,7 +187,7 @@ const Home = () => {
         <div className="footer-content">
           <div className="footer-brand">
             <h3>EliteVeda</h3>
-            <p>Where Knowledge Meets Excellence 🚀</p>
+            <p>Elevate your learning 🚀</p>
           </div>
           <div className="footer-links">
             <h4>Courses</h4>

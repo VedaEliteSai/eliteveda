@@ -1419,3 +1419,60 @@
     font-size: 13px;
   }
 }
+/* Add this CSS to CourseDetail.css */
+
+/* Certificates Section - Simple */
+.certificates-section {
+  padding: 80px 80px;
+  background: #F8FAFC;
+  text-align: center;
+}
+
+.certificates-section h2 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 50px;
+  letter-spacing: -1px;
+}
+
+.certificate-image-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.certificate-image {
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.certificate-image:hover {
+  transform: scale(1.02);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .certificates-section {
+    padding: 60px 25px;
+  }
+
+  .certificates-section h2 {
+    font-size: 34px;
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .certificates-section {
+    padding: 50px 20px;
+  }
+
+  .certificates-section h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+  }
+}
+
