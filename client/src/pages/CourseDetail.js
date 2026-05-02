@@ -2,6 +2,92 @@ import React, { useState } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import '../styles/CourseDetail.css';
 
+const courseImageOverrides = {
+  'android-development': 'android-development.png',
+  'ui-ux-design': 'ui-ux-design.png',
+  'iot-robotics': 'iot-robotics.png',
+  'business-analytics': 'business-analytics.png',
+  'finance-management': 'finance-management.png',
+  'human-resource': 'human-resource.png',
+  'graphic-design': 'graphic-design.png',
+  'stock-market': 'stock-market.png'
+};
+
+const getExtraModules = (title) => {
+  const lowerTitle = title.toLowerCase();
+
+  if (lowerTitle.includes('artificial intelligence') || lowerTitle.includes('machine learning')) {
+    return ['Model Evaluation & Optimization', 'Prompting, Automation & AI Tools', 'Industry Project Lab', 'Portfolio & Interview Preparation'];
+  }
+  if (lowerTitle.includes('web')) {
+    return ['React Components & State Management', 'APIs, Databases & Authentication', 'Deployment & Performance', 'Portfolio & Interview Preparation'];
+  }
+  if (lowerTitle.includes('data') || lowerTitle.includes('analytics')) {
+    return ['SQL & Business Dashboards', 'Predictive Analytics Workflow', 'Capstone Data Storytelling Project', 'Portfolio & Interview Preparation'];
+  }
+  if (lowerTitle.includes('cyber')) {
+    return ['Network Security & Threat Monitoring', 'Web Security & Vulnerability Testing', 'Security Tools Lab', 'Portfolio & Interview Preparation'];
+  }
+  if (lowerTitle.includes('digital marketing')) {
+    return ['SEO Growth Systems', 'Social Media & Content Calendar', 'Performance Marketing Analytics', 'Campaign Portfolio Preparation'];
+  }
+  if (lowerTitle.includes('finance') || lowerTitle.includes('stock')) {
+    return ['Financial Models & Risk Basics', 'Market Research & Analysis Lab', 'Portfolio Planning Project', 'Career Preparation'];
+  }
+  if (lowerTitle.includes('human')) {
+    return ['Recruitment Operations', 'Employee Engagement & HR Analytics', 'HR Case Study Project', 'Career Preparation'];
+  }
+  if (lowerTitle.includes('design') || lowerTitle.includes('ui')) {
+    return ['Design Systems & Components', 'Prototype Testing & Feedback', 'Portfolio Case Study Project', 'Career Preparation'];
+  }
+  return ['Industry Tools Workshop', 'Guided Practice Lab', 'Capstone Project', 'Portfolio & Interview Preparation'];
+};
+
+const createModuleCurriculum = (course) => {
+  const baseModules = course.curriculum.map((item, index) => ({
+    ...item,
+    module: `Module ${index + 1}`
+  }));
+
+  const extraModules = getExtraModules(course.title).map((title, index) => ({
+    module: `Module ${baseModules.length + index + 1}`,
+    title,
+    topics: [
+      {
+        heading: 'What you will cover',
+        items: [
+          'Mentor-guided concepts and practical examples',
+          'Hands-on exercises connected to real workflows',
+          'Review tasks to strengthen confidence and recall'
+        ]
+      }
+    ]
+  }));
+
+  const firstEightModules = [...baseModules, ...extraModules].slice(0, 8).map((item, index) => ({
+    ...item,
+    module: `Module ${index + 1}`
+  }));
+
+  return [
+    ...firstEightModules,
+    {
+      module: `Module ${firstEightModules.length + 1}`,
+      title: 'Certifications & Career Readiness',
+      topics: [
+        {
+          heading: 'Final outcomes',
+          items: [
+            'Final project review and submission',
+            'Certificate guidance and completion checklist',
+            'Resume, portfolio, and interview preparation'
+          ]
+        }
+      ]
+    }
+  ];
+};
+
 const CourseDetail = () => {
   const { courseSlug } = useParams();
   const [openWeeks, setOpenWeeks] = useState({});
@@ -2544,24 +2630,34 @@ const handleSubmit = async (e) => {
     );
   }
 
+  const courseImage = courseImageOverrides[courseSlug] || course.image;
+  const moduleCurriculum = createModuleCurriculum(course);
+
   return (
     <div className="course-detail-page">
       {/* Navbar */}
-      <nav className="navbar">
-        <Link to="/" className="logo">EliteVeda</Link>
-        <ul className="nav-links">
+      <nav className="course-detail-nav">
+        <Link to="/" className="course-detail-brand" aria-label="EliteVeda home">
+          <img src={`${process.env.PUBLIC_URL}/images/logo.png`} alt="EliteVeda Logo" />
+          <span>
+            <strong>EliteVeda</strong>
+            <small>Career-ready learning</small>
+          </span>
+        </Link>
+        <ul className="course-detail-nav-links">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/courses">Courses</Link></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><Link to="/about">About</Link></li>
+          <li><Link to="/contact">Contact</Link></li>
         </ul>
+        <button className="course-detail-nav-cta" onClick={scrollToEnrollment}>Apply Now</button>
       </nav>
 
       {/* Hero Section */}
       <section 
         className="course-hero"
         style={{
-          backgroundImage: `linear-gradient(rgba(15, 23, 42, 0.5), rgba(15, 23, 42, 0.5)), url(${process.env.PUBLIC_URL}/images/courses/${course.image})`,
+          backgroundImage: `linear-gradient(100deg, rgba(12, 22, 38, 0.92) 0%, rgba(12, 22, 38, 0.74) 52%, rgba(12, 22, 38, 0.34) 100%), url(${process.env.PUBLIC_URL}/images/courses/${courseImage})`,
           backgroundSize: 'cover',
           backgroundPosition: 'center center',
           backgroundRepeat: 'no-repeat'
@@ -2571,10 +2667,10 @@ const handleSubmit = async (e) => {
           <div className="course-icon-large">{course.icon}</div>
           <h1>{course.title}</h1>
           <p>{course.description}</p>
-          <button className="btn-primary large">Download Brochure</button>
+          <button className="btn-primary large" onClick={scrollToEnrollment}>Download Brochure</button>
           <div className="enrollment-info">
-            <span>👥 {course.enrolled} Students already enrolled</span>
-            <span className="rating">⭐ {course.rating} Course Rating</span>
+            <span>{course.enrolled} students already enrolled</span>
+            <span className="rating">{course.rating} course rating</span>
           </div>
         </div>
 
@@ -2662,16 +2758,18 @@ const handleSubmit = async (e) => {
 
       {/* Curriculum with Accordion */}
       <section className="curriculum-section">
-        <h2>Program Curriculum</h2>
+        <p className="section-kicker">Curriculum</p>
+        <h2>Program Modules</h2>
         <div className="curriculum-container">
           <div className="curriculum-accordion">
-            {course.curriculum.map((week, index) => (
+            {moduleCurriculum.map((week, index) => (
               <div className="week-accordion-item" key={index}>
                 <div 
                   className="week-header" 
                   onClick={() => toggleWeek(index)}
                 >
-                  <h3>{week.week}: {week.title}</h3>
+                  <span className="module-index">{week.module}</span>
+                  <h3>{week.title}</h3>
                   <span className={`arrow ${openWeeks[index] ? 'open' : ''}`}>▼</span>
                 </div>
                 {openWeeks[index] && (
@@ -2692,20 +2790,59 @@ const handleSubmit = async (e) => {
             ))}
           </div>
           <div className="curriculum-image">
-            <img src={`${process.env.PUBLIC_URL}/images/courses/${course.image}`} alt={course.title} />
+            <img src={`${process.env.PUBLIC_URL}/images/courses/${courseImage}`} alt={course.title} />
+            <div className="curriculum-side-card">
+              <strong>{moduleCurriculum.length} modules</strong>
+              <span>Includes projects, portfolio review, and certifications.</span>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Certificates Section */}
       <section className="certificates-section">
-        <h2>Get <span className="highlight">Certified</span></h2>
-        <div className="certificate-image-container">
-          <img 
-            src={`${process.env.PUBLIC_URL}/images/certifications/certificate-sample.jpg`} 
-            alt="Course Completion Certificate" 
-            className="certificate-image"
-          />
+        <div className="certificates-header">
+          <p className="section-kicker">Certificates</p>
+          <h2>Earn credentials that feel presentation-ready</h2>
+          <p className="certificates-subtitle">Learners receive beautifully designed EliteVeda certificates that can be added to portfolios, resumes, and LinkedIn profiles.</p>
+        </div>
+        <div className="certificate-showcase">
+          <article className="certificate-card-preview">
+            <div className="certificate-copy">
+              <span>Achievement certificate</span>
+              <h3>Certificate of Excellence</h3>
+              <p>For learners who complete the program with strong project work and consistent performance.</p>
+            </div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/certifications/certificate-excellence.jpg`}
+              alt="EliteVeda certificate of excellence sample"
+              className="certificate-image"
+            />
+          </article>
+          <article className="certificate-card-preview">
+            <div className="certificate-copy">
+              <span>Training certificate</span>
+              <h3>Certificate of Internship</h3>
+              <p>Proof of training completion with internship duration, mentor validation, and official recognition marks.</p>
+            </div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/certifications/certificate-training.jpg`}
+              alt="EliteVeda certificate of internship sample"
+              className="certificate-image"
+            />
+          </article>
+          <article className="certificate-card-preview">
+            <div className="certificate-copy">
+              <span>Completion certificate</span>
+              <h3>Course Completion Certificate</h3>
+              <p>A completion credential learners can use to showcase their course outcome and skill milestone.</p>
+            </div>
+            <img
+              src={`${process.env.PUBLIC_URL}/images/certifications/certificate-sample.jpg`}
+              alt="EliteVeda course completion certificate sample"
+              className="certificate-image"
+            />
+          </article>
         </div>
       </section>
 
@@ -2814,3 +2951,4 @@ const handleSubmit = async (e) => {
 };
 
 export default CourseDetail;
+
